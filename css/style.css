@@ -21,7 +21,6 @@ body{
     width: 1600px;
     margin: 0 auto;
     display: flex;
-    /* padding: 100px 0; */
 }
 
 .logo{
@@ -52,24 +51,28 @@ ul{
 
 ul li{
     list-style-type: none;
-    border-right: 2px solid rgb(97, 247, 154);
+    border-right: 1px solid rgb(97, 247, 154);
     padding: 10px 20px;
 }
 
-ul li:first-child{
-    border-left: 2px solid rgb(97, 247, 154);
+#left-option{
+    border-left: 1px solid rgb(97, 247, 154);
 }
+
 
 ul li a{
+    text-align: center;
     text-decoration: none;
-    padding: 10px 20px;
+    margin: 10px 20px;
     color: #fff;
     display: block;
-    transition: color 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    border-bottom: 1px solid #333;
 }
 
 ul li a:hover{
     color: rgb(106, 240, 158);
+    border-bottom: 1px solid rgb(106, 240, 158);
 }
 
 ul li{
@@ -83,7 +86,7 @@ ul ul{
 }
 
 ul li:hover ul{
-    left: -2px;
+    left: 0px;
     background: #333; 
 }
 
@@ -107,5 +110,5 @@ ul li ul li ul{
 
 ul li ul li:hover ul{
     top: 0;
-    left: 172px;
+    left: 170px;
 } 
